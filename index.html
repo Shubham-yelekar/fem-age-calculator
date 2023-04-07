@@ -6,6 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Age calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,29 +18,33 @@
 </head>
 <body>
 
-  <div class="conatiner">
+  <div class="container">
     <form action="" method="get" class="form-wrapper">
+      <div class="inputs">
+        <div class="input-box">
+          <label for="dayOB">Day</label>
+          <input required type="text" name="dayOB" id="dayOB" placeholder="DD">
+        </div>
+        <div class="input-box">
+          <label for="monthOB">Month</label>
+          <input required type="text" name="monthOB" id="monthOB" placeholder="MM">
+        </div>
+        <div class="input-box">
+          <label for="yearOB">Year</label>
+          <input required type="text" name="yearOB" id="yearOB" placeholder="YYYY">
+        </div>
+      </div>
       
-      <div class="input-box">
-        <label for="dayOB">Day</label>
-        <input type="text" name="dayOB" id="dayOB" placeholder="Day Of Birth">
+      <div class="button-div">
+        <div class="line"></div>
+        <button type="submit"><img src="./assets/images/icon-arrow.svg" alt="" srcset=""></button>
       </div>
-      <div class="input-box">
-        <label for="monthOB">Month</label>
-        <input type="text" name="monthOB" id="monthOB" placeholder="Month Of Birth">
-      </div>
-      <div class="input-box">
-        <label for="yearOB">Year</label>
-        <input type="text" name="yearOB" id="yearOB" placeholder="Day Of Birth">
-      </div>
-
-      <button type="submit"><img src="./assets/images/icon-arrow.svg" alt="" srcset=""></button>
     </form>
 
     <div class="response-wrapper">
       <h1><span>24</span>years</h1>
-      <h1><span>24</span>months</h1>
-      <h1><span>24</span>days</h1>
+      <h1><span>08</span>months</h1>
+      <h1><span>1999</span>days</h1>
     </div>
   </div>
 
