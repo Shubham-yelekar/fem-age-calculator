@@ -141,14 +141,14 @@ label {
 input {
   width: 12rem;
   padding: 0 1rem;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   margin: 4px 0;
   border-radius: 8px;
   border: 1px solid var(--light-grey);
 }
 
 input::placeholder {
-  font-size: 3.6rem;
+  font-size: 3.2rem;
 }
 
 .button-div {

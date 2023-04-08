@@ -19,40 +19,40 @@
 <body>
 
   <div class="container">
-    <form action="" method="get" class="form-wrapper">
+    <form id="form" method="get" autocomplete="off" class="form-wrapper">
       <div class="inputs">
         <div class="input-box">
-          <label for="dayOB">Day</label>
-          <input required type="text" name="dayOB" id="dayOB" placeholder="DD">
+          <label for="day">Day</label>
+          <input minlength="1" maxlength="2" type="text" name="day" id="day" placeholder="DD" required>
         </div>
         <div class="input-box">
-          <label for="monthOB">Month</label>
-          <input required type="text" name="monthOB" id="monthOB" placeholder="MM">
+          <label for="month">Month</label>
+          <input  maxlength="2" minlength="1" type="text" name="month" id="month" placeholder="MM" required>
         </div>
         <div class="input-box">
-          <label for="yearOB">Year</label>
-          <input required type="text" name="yearOB" id="yearOB" placeholder="YYYY">
+          <label for="year">Year</label>
+          <input  minlength="4" maxlength="4" type="text" name="year" id="year" placeholder="YYYY" required>
         </div>
       </div>
       
       <div class="button-div">
         <div class="line"></div>
-        <button type="submit"><img src="./assets/images/icon-arrow.svg" alt="" srcset=""></button>
+        <button type="button" name="submit" value="submit" id="submit-btn" ><img src="./assets/images/icon-arrow.svg" alt="" srcset=""></button>
       </div>
     </form>
 
     <div class="response-wrapper">
-      <h1><span>24</span>years</h1>
-      <h1><span>08</span>months</h1>
-      <h1><span>1999</span>days</h1>
+      <h1><span id="year-output"></span>years</h1>
+      <h1><span id="month-output"></span>months</h1>
+      <h1><span id="day-output"></span>days</h1>
     </div>
   </div>
 
   
-  
+  <script src="./app.js"></script>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">shubham yelekar</a>.
   </div>
 </body>
 </html>
